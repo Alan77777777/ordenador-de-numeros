@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ORDENADOR DE NUMEROS</title>
+    <link rel="stylesheet" href="/bootstrap-5.2.0-beta1-dist/css/bootstrap.min.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="row mt-4">
+
+            <section id="content" class="col-12">
+                <div class="row">
+                    <section id="products" class="col-12 border">
+                        <h2 class="m-4 text-center">ORDENADOR DE NUMEROS</h2>
+                        <hr>
+
+                        <div class="input-group col-12 mx-auto mb-2">
+                            <input id="entrada" type="number" class="form-control" placeholder="Escribe un numero" aria-label="Escribe un numero" aria-describedby="basic-addon2">
+                            <div class="input-group-append">
+                                <button onclick="calcularNumber()" id="boton" class="btn btn-outline-secondary rounded-0 rounded-end" type="button">ORDENAR</button>
+                            </div>
+                        </div>
+
+                        <div class="items row justify-content-around pt-3 pb-4 text-white text-center">
+                            <div id="par" class="item col-sm-3 bg-info">
+                                PARES
+                            </div>
+                            <div id="impar" class="item col-sm-3 bg-dark">
+                                IMPARES
+                            </div>
+                            <div id="positivo" class="item col-sm-3 bg-info">
+                                POSITIVOS
+                            </div>
+                        </div>
+
+                        <div class="items row justify-content-around pt-3 pb-4 text-white text-center">
+                            <div id="negativo" class="item col-sm-3 bg-dark">
+                                NEGATIVOS
+                            </div>
+                            <div id="nulo" class="item col-sm-3 bg-info">
+                                NULOS
+                            </div>
+                            <div id="primo" class="item col-sm-3 bg-dark">
+                                PRIMOS
+                            </div>
+                        </div>
+
+                    </section>
+
+                </div>
+            </section>
+
+        </div>
+    </div>
+
+    <style>
+        @media (max-width: 575px) {
+            .pb-4 {
+                padding-bottom: 0rem !important;
+            }
+            .pt-3 {
+                padding-top: 0rem !important;
+            }
+            .items {
+                margin-left: 2px;
+                margin-right: 2px;
+            }
+            #primo {
+                margin-bottom: 15px;
+            }
+        }
+    </style>
+
+    <script type="text/javascript" src="/jquery/jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="/bootstrap-5.2.0-beta1-dist/js/bootstrap.min.js"></script>
+    <script src="/main.js"></script>
+</body>
+
+
+</html>
